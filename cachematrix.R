@@ -32,3 +32,10 @@ cacheSolve <- function(x=matrix(), ...) {
   x $setmatrix(m)
   m
 }
+## Now I am setting up a 2 by 2 matrix with the values 1 to 4 and caching its inverse
+> a <- makeCacheMatrix()
+> a $set(matrix(1:4,2,2))
+> cacheSolve(a)
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
